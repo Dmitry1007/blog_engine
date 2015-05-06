@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'github_hook'
 require 'ostruct'
 require 'time'
+require 'yaml'
 
 class Blog < Sinatra::Base
   use GithubHook
