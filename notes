@@ -1,0 +1,34 @@
+__FILE__
+The name of the file currently being executed, including path relative to the directory where the application was started up (or the current directory, if it has been changed). The current file is, in some cases, different from the startup file for the running application, which is available in the global variable $0.
+
+expand_path(file_name [, dir_string] ) → abs_file_name
+Converts a pathname to an absolute pathname. Relative paths are referenced from the current working directory of the process unless dir_string is given, in which case it will be used as the starting point. The given pathname may start with a “~”, which expands to the process owner’s home directory (the environment variable HOME must be set correctly). “~user” expands to the named user’s home directory.
+
+Rendering Markdown From a String
+get('/') { markdown "# A Headline" }
+
+embedding markdown in ERB
+<h1>Markdown in ERB</h1>
+<%= markdown("This is *Markdown*!") %>
+
+An OpenStruct is a data structure, similar to a Hash, that allows the definition of arbitrary attributes with their accompanying values. This is accomplished by using Ruby’s metaprogramming to define methods on the class itself.
+
+Objects of class Dir are directory streams representing directories in the underlying file system. They provide a variety of ways to list directories and their contents. See also File.
+
+basename(file_name [, suffix] ) → base_name
+Returns the last component of the filename given in file_name, which can be formed using both File::SEPARATOR and File::ALT_SEPARATOR as the separator when File::ALT_SEPARATOR is not nil. If suffix is given and present at the end of file_name, it is removed. If suffix is “.*”, any extension will be removed.
+
+File.basename("/home/gumby/work/ruby.rb")          #=> "ruby.rb"
+File.basename("/home/gumby/work/ruby.rb", ".rb")   #=> "ruby"
+File.basename("/home/gumby/work/ruby.rb", ".*")    #=> "ruby"
+
+This module provides a Ruby interface for data serialization(publishing) in YAML format. 
+
+glob( pattern, [flags] ) => array
+glob( pattern, [flags] ) {| filename | block } => nil
+Returns the filenames found by expanding pattern which is an Array of the patterns or the pattern String, either as an array or as parameters to the block. Note that this pattern is not a regexp (it’s closer to a shell glob). See File::fnmatch for the meaning of the flags parameter. Note that case sensitivity depends on your system (so File::FNM_CASEFOLD is ignored)
+
+URL slugs are the exact address of a specific website. It is the location where webpages are accessed when typing their URL in the address bar. Optimizing URL slugs is not a very hard thing to do. But if you ask me, it is one of the most important things you can do in your on site optimization process. The "location slug" is the last part of the URL to a page or a blog posting.
+
+ERB is a feature of Ruby that enables you to conveniently generate any kind of text, in any quantity, from templates. The templates themselves combine plain text with Ruby code for variable substitution and flow control, which makes them easy to write and maintain.
+
