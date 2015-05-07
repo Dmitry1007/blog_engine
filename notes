@@ -32,3 +32,6 @@ URL slugs are the exact address of a specific website. It is the location where 
 
 ERB is a feature of Ruby that enables you to conveniently generate any kind of text, in any quantity, from templates. The templates themselves combine plain text with Ruby code for variable substitution and flow control, which makes them easy to write and maintain.
 
+Views in Sinatra are HTML templates that can optionally contain data passed from the application. There are numerous template engines available; Erb, Haml, and Erubis are just a few. 
+
+Statements to be evaluated (displaying instance variables, performing transformation operations, etc.) are wrapped in <%= %> tags, while control statements (loops, etc.) are wrapped in <% %> tags.
